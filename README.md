@@ -19,3 +19,5 @@
 - The Dashboard will also graph the number of Recoveries for the end users to see if the recoveries are outpacing the cases within a specific country
 
 - he Dashboard will also graph the number of Deaths for the end users to see the mortality rate for Covid-19
+
+Thank you!
