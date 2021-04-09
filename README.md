@@ -5,4 +5,4 @@ This Dashboard will show
 # Recovered
 # Deaths
 
-User can select by Country Name 
+User can select by Country Name which then will show the total cases in that specific Country and a graph which will show
