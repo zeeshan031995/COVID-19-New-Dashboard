@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>COVID19 Summary</title>    
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-  </head>
-  <body>
-    <div class="container-main">
-        <div class="container-left">
-            <h1 class="page-title">COVID19 Summary</h1>
-            <div class="container-table">
-              <data-table id="data_table_1"></data-table>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible", content="ie=edge">
+    <title>Live COVID-19 Case Tracker</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo" />
+            <p>COVID-19<br />STATS</p>
+        </div>
+    </header>
+    <main>
+        <div class="stats">
+            <div class="latestReport">
+                <div class="country">
+                    <div class="name">Loading...</div>
+                    <div class="changeCountry">Change</div>
+                    <div class="searchCountry hide">
+                        <div class="searchBox">
+                            <input type="text" id="searchInput" placeholder="Search country" />
+                            <img class="close" src="./images/cancel.png" />
+                        </div>
+                        <div class="countryList"></div>
+                    </div>
+                </div>
+                <div class="totalCases">
+                    <div class="title">Total Cases</div>
+                    <div class="value">0</div>
+                    <div class="newValue">+0</div>
+                </div>
+                <div class="recovered">
+                    <div class="title">Recovered</div>
+                    <div class="value">0</div>
+                    <div class="newValue">+0</div>
+                </div>
+                <div class="deaths">
+                    <div class="title">Deaths</div>
+                    <div class="value">0</div>
+                    <div class="newValue">+0</div>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="axesLineChart"></canvas>
             </div>
         </div>
-        <div class="container-right">
-          <div>
-            <pie-chart id="pie_chart_1"></pie-chart>
-          </div>
-          <div class="container-cancel-button">
-            <button id="cancel_button">Clear Selected Country</button>
-          </div>
-        </div>        
-    </div>
-  </body>
-
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="index.js" type="module" defer></script>
-  <script src="config.js" type="module" defer></script>
-
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="copyright">
+                <p>Covid 19 Zeeshan Project</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="main.js"></script>
+</body>
 </html>

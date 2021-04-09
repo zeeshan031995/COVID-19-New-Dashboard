@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+html {
+    font-size: 18px;
+}
+.hide {
+    display: none;
+}
+.fadeIn {
+    animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #F3F2F2;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    flex: 1;
+}
+.logo img {
+    width: 60px;
+}
+.logo p {
+    font-weight: bold;
+    color: purple;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.stats {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('images/background.jpg');
+    background-size: cover;
+}
+.latestReport {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 50px;
+    width: 80%;
+    color: #fff;
+}
+.country, .totalCases, .recovered, .deaths {
+    height: 100px;
+}
+.name {
+    color: purple;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.changeCountry {
+    cursor: pointer;
+}
+.title {
+    font-size: 1.3em;
+}
+.totalCases .value {
+    font-size: 2em;
+    font-weight: bold;
+}
+.recovered .value {
+    font-size: 2em;
+    font-weight: bold;
+    color: green;
+}
+.deaths .value {
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}
+.newValue {
+    font-size: 1.3em;
+}
+.chart {
+    width: 80%;
+    height: 70vh;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.searchCountry {
+
+    position: relative;
+    top: 10px;
+
+}
+.searchBox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 30px;
+    background-color: #111;
+    z-index: 1;
+}
+.searchBox input {
+    width: 360px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 15px;
+    font-size: 1.1em;
+}
+.searchBox img {
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.countryList {
+    display: flex;
+
+    position: absolute;
+    top: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-y: scroll;
+}
+.countryList ul {
+    width: 100%;
+}
+.countryList ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+}
+.countryList ul li:hover {
+    border-left: 1px solid #fff;
+}
+footer {
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: purple;
+}
+.footerContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.copyright p {
+    color: #fff;
+}
+
+/* width */
+.countryList::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+.countryList::-webkit-scrollbar-track {
+background: #111;
+}
+
+/* Handle */
+.countryList::-webkit-scrollbar-thumb {
+background: #f1f1f1; 
+}
+
+/* Handle on hover */
+.countryList::-webkit-scrollbar-thumb:hover {
+background: #fff; 
+}
+
+
+@media screen and (max-width: 600px) {
+    .latestReport {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
