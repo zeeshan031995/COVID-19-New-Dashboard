@@ -6,6 +6,6 @@ This Dashboard will show
 # Deaths
 
 User can select by Country Name which then will show the total cases in that specific Country and a graph which will show
-# Cases and new Cases
-# Deaths and New Deaths
-# # Recovered and # recovered recently 
+# Cases by Country
+# Deaths by Country
+# Recovered by Country
