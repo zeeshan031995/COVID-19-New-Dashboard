@@ -9,3 +9,5 @@ User can select by Country Name which then will show the total cases in that spe
 # Cases by Country
 # Deaths by Country
 # Recovered by Country
+
+The top Chart will also show New Cases, New Deaths and New Recoveries that were last updated on Covid19 API
