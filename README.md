@@ -11,3 +11,5 @@ User can select by Country Name which then will show the total cases in that spe
 # Recovered by Country
 
 The top Chart will also show New Cases, New Deaths and New Recoveries that were last updated on Covid19 API
+
+This app will help users understand the severity of Covid-19 around the world and how different countries are handling the situation.
