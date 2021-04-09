@@ -15,3 +15,7 @@
 # This app will help users understand the severity of Covid-19 around the world and how different countries are handling the situation. As the Daashboard provide a comprehensive understanding of the global COVID-19 Case counts and deaths. 
 
 - The dashboard will also graph the number of cases for the User as that will provide a visual cue for the end user to better under the Covid-19 Curve.
+
+- The Dashboard will also graph the number of Recoveries for the end users to see if the recoveries are outpacing the cases within a specific country
+
+- 
